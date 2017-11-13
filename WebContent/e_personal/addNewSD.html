@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+</head>
+<body>
+	<div class="generic-container">
+
+		
+		<div class="container" style="margin-bottom: 19px">
+			<h1 class="well">Add Student Syllabus Details !</h1>
+			<div class="col-lg-12 well">
+				<div class="row">
+
+					<!--  RegisterServlet  form -->
+					<form data-ng-submit="submitsd()" name="myForm">
+						<div class="col-sm-12">
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Student ID</label> <input type="text" data-ng-model="studentsd.studentId"
+										placeholder="Student Id (same as Personal detail)" class="form-control" required>{{studentsd.studentId}}
+								</div>
+							</div>
+														
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Date of Joining</label> <input type="text" data-ng-model="studentsd.dateofjoining"
+										placeholder="Date of Joining(yyyy-MM-dd or dd-MM-yyyy)" class="form-control" required>{{studentsd.dateofjoining}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Present KYU</label> <input type="text" data-ng-model="studentsd.presentkyu"
+										placeholder="Present KYU" class="form-control" required>{{studentsd.presentkyu}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Present Belt</label> <input type="text" data-ng-model="studentsd.presentbelt"
+										placeholder="Present Belt" class="form-control" required>{{studentsd.presentbelt}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Last Grading Date</label> <input type="text" data-ng-model="studentsd.lastgradingdate"
+										placeholder="Last Grading Date(yyyy-MM-dd or dd-MM-yyyy)" class="form-control" required>{{studentsd.lastgradingdate}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Next Grading Date</label> <input type="text" data-ng-model="studentsd.nextgradingdate "
+										placeholder="Next Grading Date(yyyy-MM-dd or dd-MM-yyyy)" class="form-control" required>{{studentsd.nextgradingdate }}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>KATAS</label> <input type="text" data-ng-model="studentsd.katas "
+										placeholder="KATAS" class="form-control" required>{{studentsd.katas }}
+								</div>
+							</div>
+						
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Combinations</label> <input type="text" data-ng-model="studentsd.combinations"
+										placeholder="Combinations" class="form-control" required>{{studentsd.combinations}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Sparing Techniques</label> <input type="text" data-ng-model="studentsd.sparingtechniques"
+										placeholder="Sparing Techniques" class="form-control" required>{{studentsd.sparingtechniques}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Level</label> <input type="text" data-ng-model="studentsd.level"
+										placeholder="Level" class="form-control" required>{{studentsd.level}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>KBI</label> <input type="text" data-ng-model="studentsd.kbi"
+										placeholder="KBI" class="form-control" required>{{studentsd.kbi}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Open</label> <input type="text" data-ng-model="studentsd.open"
+										placeholder="Open" class="form-control" required>{{studentsd.open}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Fee Paid</label> <input type="text" data-ng-model="studentsd.feepaid"
+										placeholder="Date of Fee Paid(yyyy-MM-dd or dd-MM-yyyy)" class="form-control" required>{{studentsd.feepaid}}
+								</div>
+							</div>
+							
+							<div class="row">
+
+								<div class="col-sm-12 form-group">
+									<label>Pending Fee</label> <input type="text" data-ng-model="studentsd.pendingfee"
+										placeholder="Pending Fee" class="form-control" required>{{studentsd.pendingfee}}
+								</div>
+							</div>						
+						<hr>
+							<div>
+
+
+								<div class="form-actions" style="text-align: center;">
+
+									<button type="submit" class="btn btn-primary btn-info"
+										style="text-align: center;">Submit</button>
+									<button type="button" class="btn btn-warning btn-info"
+										style="text-align: center;" data-ng-click="reset()">Reset
+									</button>
+
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

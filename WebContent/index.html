@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Eagle</title>
+
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="e_resources/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" type="text/css" />
+<link href="e_resources/assets/css/style.css" rel="stylesheet" type="text/css">
+
+<style>
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #0f0f0f;
+	color: white;
+	padding: 15px;
+}
+
+
+</style>
+</head>
+<body class="w3-theme-l5" data-ng-app="myApp"
+	data-ng-controller="studentController">
+
+	<div data-ng-include src="'e_pages/navbar.html'"></div>
+
+	
+	<!-- end title -->
+
+	<!-- 	middle view -->
+
+	<div data-ng-view=""></div>
+
+	<!-- End Middle View -->
+
+	<!-- Footer -->
+	<footer class="container-fluid">
+		<div style="float: left;">
+			<p>Dated</p>
+		</div>
+	</footer>
+
+	<!-- End Footer -->
+
+	<!-- 	Angular Script -->
+	<script type="text/javascript" src="e_resources/assets/js/angular.min.js"></script>
+	<script type="text/javascript" src="e_resources/assets/js/angular-route.min.js"></script>
+	<script type="text/javascript" src="e_resources/assets/js/angular-cookies.min.js"></script>
+	<script type="text/javascript" src="e_resources/assets/js/jquery.min.js"></script>
+
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="e_personal/studentController.js"></script>
+	<script type="text/javascript" src="e_personal/studentService.js"></script>
+
+	<!-- 	End AngularScript -->
+</body>
+</html>
+
+

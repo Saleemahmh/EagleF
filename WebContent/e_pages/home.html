@@ -1,0 +1,220 @@
+</head>
+
+<body>
+	<div>
+		Student Name:
+		<select name="students" ng-options="student.name for student in studentpds" ng-model="studentselected">
+			<option value="">--Select Name--</option>
+		</select>
+		<br />
+		<br /> Student ID:
+		<select name="students" ng-options="student.studentId for student in studentsds" ng-model="studentselected1">
+			<option value="">--Select Corresponding ID--</option>
+		</select>
+		<br />
+		<div ng-repeat="img in imgurl"><img ng-src="{{img.url}}"></div>
+		
+		<br />
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Student ID</label>
+			<input type="text" data-ng-model="studentselected.studentId" placeholder="Student Id" class="form-control" required>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Student Name</label>
+			<input type="text" data-ng-model="studentselected.name" placeholder="Student Name" class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Date Of Birth</label>
+		<input type="text" data-ng-model="studentselected.dob" placeholder="Student Date Of Birth (yyyy-MM-dd or dd-MM-yyyy)" class="form-control"
+		    required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Age</label>
+			<input type="text" data-ng-model="studentselected.age" placeholder="Student Age" class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Parent Name</label>
+		<input type="text" data-ng-model="studentselected.parentName" placeholder="Student Parent Name" class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Contact No:</label>
+			<input type="text" data-ng-model="studentselected.contactNo" placeholder="Parent Contact No:" class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Conatct Email</label>
+		<input type="text" data-ng-model="studentselected.contactEmail" placeholder="Parent Contact Email" class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Blood Group</label>
+			<input type="text" data-ng-model="studentselected.bloodGrp" placeholder="Student Blood Group" class="form-control" required>
+		</div>
+	</div>
+
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Date of Joining</label>
+		<input type="text" data-ng-model="studentselected1.dateofjoining" placeholder="Date of Joining(yyyy-MM-dd or dd-MM-yyyy)"
+		    class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Present KYU</label>
+			<input type="text" data-ng-model="studentselected1.presentkyu" placeholder="Present KYU" class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Present Belt</label>
+		<input type="text" data-ng-model="studentselected1.presentbelt" placeholder="Present Belt" class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Last Grading Date</label>
+			<input type="text" data-ng-model="studentselected1.lastgradingdate" placeholder="Last Grading Date(yyyy-MM-dd or dd-MM-yyyy)"
+			    class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Next Grading Date</label>
+		<input type="text" data-ng-model="studentselected1.nextgradingdate " placeholder="Next Grading Date(yyyy-MM-dd or dd-MM-yyyy)"
+		    class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">KATAS</label>
+			<input type="text" data-ng-model="studentselected1.katas " placeholder="KATAS" class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Combinations</label>
+		<input type="text" data-ng-model="studentselected1.combinations" placeholder="Combinations" class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Sparing Techniques</label>
+			<input type="text" data-ng-model="studentselected1.sparingtechniques" placeholder="Sparing Techniques" class="form-control"
+			    required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Level</label>
+		<input type="text" data-ng-model="studentselected1.level" placeholder="Level" class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">KBI</label>
+			<input type="text" data-ng-model="studentselected1.kbi" placeholder="KBI" class="form-control" required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group">
+		<label class="col-sm-4 form-label">Open</label>
+		<input type="text" data-ng-model="studentselected1.open" placeholder="Open" class="form-control" required>
+	</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-6 form-group">
+			<label class="col-sm-4 form-label">Fee Paid</label>
+			<input type="text" data-ng-model="studentselected1.feepaid" placeholder="Date of Fee Paid(yyyy-MM-dd or dd-MM-yyyy)" class="form-control"
+			    required>
+		</div>
+	</div>
+
+
+
+	<div class="col-sm-6 form-group" style="text-align: center;">
+		<label class="col-sm-4 form-label">Pending Fee</label>
+		<input type="text" data-ng-model="studentselected1.pendingfee" placeholder="Pending Fee" class="form-control" required>
+	</div>
+	</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</body>
+
+</html>
+<!--
+	uploading image file
+	
+	<form class="form-horizontal" enctype="multipart/form-data">
+				<div class="form-group">
+					<label class="control-label col-sm-4" for="uploadfile">Upload File:</label>
+					<div class="col-sm-5">
+						<input class="form-control" type="file" file-model = "uploadedFile" placeholder="Upload File"></input>
+					</div>
+				</div>
+				<div class="form-group"> 
+					<div class="col-sm-offset-2 col-sm-10">
+					  <button type="submit" class="btn btn-default" ng-click = "doUploadFile()">Upload</button>
+					</div>
+				</div>
+			</form>
+			<hr/>
+			<div class="col-sm-offset-2">
+				<p ng-bind="uploadResult"></p>
+			</div>
+		</div>
+	-->
