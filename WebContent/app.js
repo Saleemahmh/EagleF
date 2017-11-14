@@ -2,7 +2,7 @@
  * 
  */
 
-var app = angular.module('myApp', [ 'ngRoute', 'ngCookies' ]);
+var app = angular.module('myApp', [ 'ngRoute', 'ngCookies','720kb.datepicker']);
 
 console.log('----Starting app.js')
 app.config(function($routeProvider) {

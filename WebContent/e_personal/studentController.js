@@ -1,6 +1,6 @@
 app.controller(
 				'studentController',
-				function($scope, studentService,$http, $location,$window) {
+				function($scope, studentService,$http, $location,$window,$filter) {
 					console.log('entering student controller')
 				
 					$scope.studentpd = {
@@ -63,7 +63,17 @@ app.controller(
 					$scope.studentsds;
 					$scope.studentpds;
 					
-
+						$scope.studentpd.dob = $filter('date')($scope.studentpd.dob, "dd/MM/yyyy");
+					  
+					$scope.calculateAge = function calculateAge(dob) { // birthday is a date
+						var ageDifMs = Date.now() - dob.getTime();
+						console.log(Date.now());
+						console.log(dob.getTime());
+						var ageDate = new Date(ageDifMs); // miliseconds from epoch
+						$scope.studentpd.age=Math.abs(ageDate.getUTCFullYear() - 1970);
+						console.log($scope.studentpd.age);
+						return $scope.studentpd.age;
+					}
 
 					function fetchAllStudentpd() {
 						console
