@@ -33,19 +33,50 @@
 							</div>
 							
 							<div class="row">
-
 								<div class="col-sm-12 form-group">
-									<label>Present KYU</label> <input type="text" data-ng-model="studentsd.presentkyu"
-										placeholder="Present KYU" class="form-control" required>{{studentsd.presentkyu}}
+									<label for="singleSelect"> Present KYU </label><br>
+									<select class="form-control" name="singleSelect" ng-model="studentsd.presentkyu">
+											<option value="">---Please select KYU---</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="New Joinee">New Joinee</option>
+										<option value="Shodan">Shodan</option>
+										<option value="Nidan">Nidan</option>
+										<option value="Shandan">Shandan</option>
+									  </select>{{studentsd.presentkyu}}
+								  
 								</div>
+								
 							</div>
 							
 							<div class="row">
 
 								<div class="col-sm-12 form-group">
-									<label>Present Belt</label> <input type="text" data-ng-model="studentsd.presentbelt"
-										placeholder="Present Belt" class="form-control" required>{{studentsd.presentbelt}}
+									<label for="singleSelect"> Present Belt </label><br>
+									<select class="form-control" name="singleSelect" ng-model="studentsd.presentbelt">
+											<option value="">---Please select Present Belt---</option>
+										<option value="White">White</option>
+										<option value="Yellow">Yellow</option>
+										<option value="White + Yellow">White + Yellow</option>
+										<option value="Orange">Orange</option>
+										<option value="Purple">Purple</option>
+										<option value="Green">Green</option>
+										<option value="Brown">Brown</option>
+										<option value="Brown + Black">Brown + Black</option>
+										<option value="Black Provisional">Black Provisional</option>
+										<option value="Black 1">Black 1</option>
+										<option value="Black 2">Black 2</option>
+										<option value="Black 3">Black 3</option>
+									  </select>{{studentsd.presentbelt}}
+								  
 								</div>
+								
 							</div>
 							
 							<div class="row">
@@ -91,8 +122,16 @@
 							<div class="row">
 
 								<div class="col-sm-12 form-group">
-									<label>Level</label> <input type="text" data-ng-model="studentsd.level"
-										placeholder="Level" class="form-control" required>{{studentsd.level}}
+									<label for="singleSelect"> Level </label><br>
+									<select class="form-control" name="singleSelect" ng-model="studentsd.level">
+											<option value="">---Please select Level ---</option>
+										<option value="DL">DL</option>
+										<option value="ST">ST</option>
+										<option value="NL">NL</option>
+										<option value="TC">TC</option>
+										<option value="RC">RC</option>
+									  </select>{{studentsd.level}}
+								  
 								</div>
 							</div>
 							
